@@ -1,0 +1,96 @@
+{
+  "summary": {
+    "pipeline": "QAFD-RAG_HOTPOTQA",
+    "num_samples": 3,
+    "exact_match": 0.6666666666666666,
+    "f1": 0.6666666666666666,
+    "mrr": 0.8333333333333334,
+    "recall@1": 0.3333333333333333,
+    "recall@2": 0.8333333333333334,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "retrieval_latency_ms": 0.5279299997103711,
+    "total_latency_ms": 0.5709439986579431,
+    "avg_diffusion_steps": 47.666666666666664
+  },
+  "samples": [
+    {
+      "id": "hotpot_bridge_001",
+      "dataset": "hotpotqa",
+      "question": "Were the directors of Inception and Interstellar the same person?",
+      "gold_answer": "yes",
+      "predicted_answer": "yes",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@2": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.5560409990721382,
+      "generation_latency_ms": 0.04774999979417771,
+      "total_latency_ms": 0.6037909988663159,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 40,
+      "retrieved_titles": [
+        "Tenet (film)",
+        "Interstellar (film)",
+        "Inception",
+        "Avatar (2009 film)"
+      ],
+      "sample_path": "Query (passage: Interstellar (film)) --[mentions | flow=0.220]--> (entity: Christopher Nolan) --[mentions | flow=0.243]--> (passage: Tenet (film))"
+    },
+    {
+      "id": "hotpot_bridge_002",
+      "dataset": "hotpotqa",
+      "question": "What award did the spouse of Marie Curie win in 1903?",
+      "gold_answer": "Nobel Prize in Physics",
+      "predicted_answer": "Nobel Prize in Physics",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@2": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.5335829991963692,
+      "generation_latency_ms": 0.041749997762963176,
+      "total_latency_ms": 0.5753329969593324,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 42,
+      "retrieved_titles": [
+        "Pierre Curie",
+        "Marie Curie",
+        "Henri Becquerel",
+        "Wilhelm Rontgen"
+      ],
+      "sample_path": "Query (entity: Marie Curie) --[mentions | flow=0.361]--> (passage: Pierre Curie)"
+    },
+    {
+      "id": "hotpot_bridge_003",
+      "dataset": "hotpotqa",
+      "question": "Which band had a lead singer who performed at Live Aid with Queen?",
+      "gold_answer": "Queen",
+      "predicted_answer": "Saturday",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@2": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.49416600086260587,
+      "generation_latency_ms": 0.039541999285575,
+      "total_latency_ms": 0.5337080001481809,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 61,
+      "retrieved_titles": [
+        "Live Aid",
+        "Freddie Mercury",
+        "David Bowie",
+        "U2"
+      ],
+      "sample_path": "Query (entity: Live Aid) --[associated_with | flow=0.088]--> (entity: July) --[mentions | flow=0.068]--> (passage: Live Aid)"
+    }
+  ]
+}

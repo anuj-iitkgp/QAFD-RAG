@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "pipeline": "GraphRAG_2WIKIMULTIHOPQA",
+    "num_samples": 2,
+    "exact_match": 1.0,
+    "f1": 1.0,
+    "mrr": 0.41666666666666663,
+    "recall@1": 0.0,
+    "recall@2": 0.25,
+    "recall@3": 0.5,
+    "recall@5": 1.0,
+    "retrieval_latency_ms": 0.5692080012522638,
+    "total_latency_ms": 0.6570625009771902,
+    "avg_diffusion_steps": 1.0
+  },
+  "samples": [
+    {
+      "id": "2wiki_comp_001",
+      "dataset": "2wikimultihopqa",
+      "question": "Which city is the birthplace of the author of 'Faust'?",
+      "gold_answer": "Frankfurt",
+      "predicted_answer": "Frankfurt",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@2": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.6184580015542451,
+      "generation_latency_ms": 0.051416998758213595,
+      "total_latency_ms": 0.6698750003124587,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "Frankfurt",
+        "Weimar",
+        "Faust (Goethe)",
+        "Johann Wolfgang von Goethe"
+      ],
+      "sample_path": "Query -> Community #0 -> (Frankfurt)"
+    },
+    {
+      "id": "2wiki_comp_002",
+      "dataset": "2wikimultihopqa",
+      "question": "What is the headquarter city of the manufacturer of the Model S?",
+      "gold_answer": "Austin",
+      "predicted_answer": "Austin",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@2": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.5199580009502824,
+      "generation_latency_ms": 0.12429200069163926,
+      "total_latency_ms": 0.6442500016419217,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "Elon Musk",
+        "Tesla Model S",
+        "Palo Alto, California",
+        "Tesla, Inc."
+      ],
+      "sample_path": "Query -> Community #0 -> (Elon Musk)"
+    }
+  ]
+}

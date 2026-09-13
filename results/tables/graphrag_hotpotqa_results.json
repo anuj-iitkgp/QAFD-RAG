@@ -1,0 +1,96 @@
+{
+  "summary": {
+    "pipeline": "GraphRAG_HOTPOTQA",
+    "num_samples": 3,
+    "exact_match": 0.6666666666666666,
+    "f1": 0.6666666666666666,
+    "mrr": 0.8333333333333334,
+    "recall@1": 0.3333333333333333,
+    "recall@2": 0.8333333333333334,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "retrieval_latency_ms": 0.5072223320894409,
+    "total_latency_ms": 0.5453886648562426,
+    "avg_diffusion_steps": 1.0
+  },
+  "samples": [
+    {
+      "id": "hotpot_bridge_001",
+      "dataset": "hotpotqa",
+      "question": "Were the directors of Inception and Interstellar the same person?",
+      "gold_answer": "yes",
+      "predicted_answer": "yes",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@2": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.5459589992824476,
+      "generation_latency_ms": 0.04379099846119061,
+      "total_latency_ms": 0.5897499977436382,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "Avatar (2009 film)",
+        "Interstellar (film)",
+        "Inception",
+        "Tenet (film)"
+      ],
+      "sample_path": "Query -> Community #0 -> (Avatar (2009 film))"
+    },
+    {
+      "id": "hotpot_bridge_002",
+      "dataset": "hotpotqa",
+      "question": "What award did the spouse of Marie Curie win in 1903?",
+      "gold_answer": "Nobel Prize in Physics",
+      "predicted_answer": "Nobel Prize in Physics",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@2": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.4906249996565748,
+      "generation_latency_ms": 0.035832999856211245,
+      "total_latency_ms": 0.526457999512786,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "Marie Curie",
+        "Pierre Curie",
+        "Henri Becquerel",
+        "Wilhelm Rontgen"
+      ],
+      "sample_path": "Query -> Community #0 -> (Marie Curie)"
+    },
+    {
+      "id": "hotpot_bridge_003",
+      "dataset": "hotpotqa",
+      "question": "Which band had a lead singer who performed at Live Aid with Queen?",
+      "gold_answer": "Queen",
+      "predicted_answer": "Saturday",
+      "exact_match": 0.0,
+      "f1": 0.0,
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@2": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.48508299732930027,
+      "generation_latency_ms": 0.03487499998300336,
+      "total_latency_ms": 0.5199579973123036,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "Live Aid",
+        "Freddie Mercury",
+        "U2",
+        "David Bowie"
+      ],
+      "sample_path": "Query -> Community #0 -> (Live Aid)"
+    }
+  ]
+}

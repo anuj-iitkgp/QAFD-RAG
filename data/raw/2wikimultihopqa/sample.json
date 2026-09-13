@@ -1,0 +1,123 @@
+[
+  {
+    "_id": "2wiki_comp_001",
+    "question": "Which city is the birthplace of the author of 'Faust'?",
+    "answer": "Frankfurt",
+    "answer_aliases": [
+      "Frankfurt am Main"
+    ],
+    "type": "compositional",
+    "supporting_facts": [
+      [
+        "Johann Wolfgang von Goethe",
+        0
+      ],
+      [
+        "Faust (Goethe)",
+        0
+      ]
+    ],
+    "evidences": [
+      [
+        "Faust (Goethe)",
+        "author",
+        "Johann Wolfgang von Goethe"
+      ],
+      [
+        "Johann Wolfgang von Goethe",
+        "place of birth",
+        "Frankfurt"
+      ]
+    ],
+    "context": [
+      [
+        "Faust (Goethe)",
+        [
+          "Faust is a tragic play in two parts by Johann Wolfgang von Goethe, considered by many to be Goethe's magnum opus and the greatest work of German literature."
+        ]
+      ],
+      [
+        "Johann Wolfgang von Goethe",
+        [
+          "Johann Wolfgang von Goethe was a German polymath born in Frankfurt on 28 August 1749.",
+          "His works include plays, poetry, literature, and natural science treatises."
+        ]
+      ],
+      [
+        "Frankfurt",
+        [
+          "Frankfurt am Main, commonly known as Frankfurt, is the most populous city in the German state of Hesse.",
+          "It is the fifth-largest city in Germany."
+        ]
+      ],
+      [
+        "Weimar",
+        [
+          "Weimar is a city in the federal state of Thuringia, Germany.",
+          "Goethe lived much of his adult life in Weimar and died there in 1832."
+        ]
+      ]
+    ]
+  },
+  {
+    "_id": "2wiki_comp_002",
+    "question": "What is the headquarter city of the manufacturer of the Model S?",
+    "answer": "Austin",
+    "answer_aliases": [
+      "Austin, Texas"
+    ],
+    "type": "compositional",
+    "supporting_facts": [
+      [
+        "Tesla Model S",
+        0
+      ],
+      [
+        "Tesla, Inc.",
+        1
+      ]
+    ],
+    "evidences": [
+      [
+        "Tesla Model S",
+        "manufacturer",
+        "Tesla, Inc."
+      ],
+      [
+        "Tesla, Inc.",
+        "headquarters",
+        "Austin"
+      ]
+    ],
+    "context": [
+      [
+        "Tesla Model S",
+        [
+          "The Tesla Model S is an all-electric five-door liftback produced by Tesla, Inc.",
+          "It was introduced on June 22, 2012."
+        ]
+      ],
+      [
+        "Tesla, Inc.",
+        [
+          "Tesla, Inc. is an American multinational automotive and clean energy company.",
+          "Headquartered in Austin, Texas, Tesla designs and manufactures electric vehicles and battery energy storage."
+        ]
+      ],
+      [
+        "Palo Alto, California",
+        [
+          "Palo Alto is a charter city located in the northwest corner of Santa Clara County, California, United States.",
+          "Tesla was previously headquartered in Palo Alto before moving to Austin in 2021."
+        ]
+      ],
+      [
+        "Elon Musk",
+        [
+          "Elon Reeve Musk is a businessman and investor.",
+          "He is the CEO of Tesla, Inc. and owner of X Corp."
+        ]
+      ]
+    ]
+  }
+]

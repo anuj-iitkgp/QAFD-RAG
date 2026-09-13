@@ -1,0 +1,81 @@
+# =====================================================================
+# QAFD-RAG Master Configuration
+# Query-Aware Flow Diffusion for Graph-Based Retrieval-Augmented Generation
+# =====================================================================
+
+# Target Dataset: 'musique', 'hotpotqa', or '2wikimultihopqa'
+dataset: musique
+data_dir: data/raw
+
+# Pluggable Embedding Model:
+# - 'nvidia-nv-embed-v2' (NVIDIA NIM)
+# - 'text-embedding-3-small' (OpenAI)
+# - 'local-hash-embed' (Zero-dependency deterministic offline fallback)
+embedding_model: local-hash-embed
+embedding_dimension: 256
+
+# LLM Generation Model:
+# - 'gpt-4o-mini'
+# - 'gpt-4o'
+# - 'meta/llama-3.1-70b-instruct'
+# - 'local-extractive'
+llm_model: local-extractive
+
+# =====================================================================
+# Query-Aware Flow Diffusion Parameters (Paper Default)
+# =====================================================================
+# alpha: Potential gradient scaling / height parameter (Paper default = 2.0)
+alpha: 2.0
+
+# epsilon: Convergence tolerance threshold for active excess flow (Paper default = 0.01)
+epsilon: 0.01
+
+# step_size: Flow push scaling factor eta along admissible edges (Paper default = 0.2)
+step_size: 0.2
+
+# Maximum iterations for push-relabel flow propagation
+max_diffusion_iterations: 100
+
+# Teleportation / regularization factor to absorb residual flow
+damping_factor: 0.85
+
+# Seed selection similarity threshold for initial query injection
+seed_threshold: 0.25
+max_seeds: 10
+
+# =====================================================================
+# Graph Construction & Retrieval Settings
+# =====================================================================
+# Graph representation: 'passage_entity' or 'entity'
+graph_type: passage_entity
+
+# Edge inclusion flags for ablations
+include_fact_edges: true
+include_synonymy_edges: true
+include_association_edges: true
+
+# Synonymy edge threshold (cosine similarity between entities)
+synonymy_threshold: 0.80
+
+# Retrieval & Context Budget
+top_k: 5
+retrieval_depth: 3
+chunk_size: 256
+
+# Reproducibility
+random_seed: 42
+
+# Caching Configuration
+cache:
+  enabled: true
+  dir: .cache
+  embeddings_cache: .cache/embeddings
+  triples_cache: .cache/triples
+  graphs_cache: .cache/graphs
+  llm_cache: .cache/llm
+
+# Output Paths
+output:
+  results_dir: results
+  tables_dir: results/tables
+  figures_dir: results/figures

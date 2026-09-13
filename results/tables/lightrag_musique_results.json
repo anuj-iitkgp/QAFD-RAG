@@ -1,0 +1,96 @@
+{
+  "summary": {
+    "pipeline": "LightRAG_MUSIQUE",
+    "num_samples": 3,
+    "exact_match": 1.0,
+    "f1": 1.0,
+    "mrr": 0.6666666666666666,
+    "recall@1": 0.1111111111111111,
+    "recall@2": 0.5555555555555555,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "retrieval_latency_ms": 0.13479133364550458,
+    "total_latency_ms": 0.31120800122153014,
+    "avg_diffusion_steps": 1.0
+  },
+  "samples": [
+    {
+      "id": "musique_2hop_001",
+      "dataset": "musique",
+      "question": "What is the capital of the country where the inventor of the telephone was born?",
+      "gold_answer": "Edinburgh",
+      "predicted_answer": "Edinburgh",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@2": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.1476659999752883,
+      "generation_latency_ms": 0.3003750025527552,
+      "total_latency_ms": 0.44804100252804346,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "United Kingdom",
+        "Scotland",
+        "Alexander Graham Bell",
+        "Thomas Edison"
+      ],
+      "sample_path": "Query -> [DualLevel: High=0.30, Low=1.00] -> (United Kingdom)"
+    },
+    {
+      "id": "musique_3hop_002",
+      "dataset": "musique",
+      "question": "Who directed the movie produced by the founder of Lucasfilm?",
+      "gold_answer": "Irvin Kershner",
+      "predicted_answer": "Irvin Kershner",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 1.0,
+      "recall@1": 0.3333333333333333,
+      "recall@2": 0.6666666666666666,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.1322919997619465,
+      "generation_latency_ms": 0.19741699725273065,
+      "total_latency_ms": 0.32970899701467715,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "The Empire Strikes Back",
+        "George Lucas",
+        "Lucasfilm",
+        "Steven Spielberg"
+      ],
+      "sample_path": "Query -> [DualLevel: High=0.36, Low=1.00] -> (The Empire Strikes Back)"
+    },
+    {
+      "id": "musique_2hop_003",
+      "dataset": "musique",
+      "question": "In what year was the university attended by the author of '1984' founded?",
+      "gold_answer": "1440",
+      "predicted_answer": "1440",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@2": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.12441600119927898,
+      "generation_latency_ms": 0.03145800292259082,
+      "total_latency_ms": 0.1558740041218698,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "University of Oxford",
+        "Eton College",
+        "George Orwell",
+        "Aldous Huxley"
+      ],
+      "sample_path": "Query -> [DualLevel: High=0.37, Low=1.00] -> (University of Oxford)"
+    }
+  ]
+}

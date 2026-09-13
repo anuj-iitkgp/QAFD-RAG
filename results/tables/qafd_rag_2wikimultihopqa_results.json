@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "pipeline": "QAFD-RAG_2WIKIMULTIHOPQA",
+    "num_samples": 2,
+    "exact_match": 1.0,
+    "f1": 1.0,
+    "mrr": 1.0,
+    "recall@1": 0.5,
+    "recall@2": 0.75,
+    "recall@3": 0.75,
+    "recall@5": 1.0,
+    "retrieval_latency_ms": 0.5560624995268881,
+    "total_latency_ms": 0.6081659994379152,
+    "avg_diffusion_steps": 57.0
+  },
+  "samples": [
+    {
+      "id": "2wiki_comp_001",
+      "dataset": "2wikimultihopqa",
+      "question": "Which city is the birthplace of the author of 'Faust'?",
+      "gold_answer": "Frankfurt",
+      "predicted_answer": "Frankfurt",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@2": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.5856669995409902,
+      "generation_latency_ms": 0.055915999837452546,
+      "total_latency_ms": 0.6415829993784428,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 51,
+      "retrieved_titles": [
+        "Johann Wolfgang von Goethe",
+        "Frankfurt",
+        "Weimar",
+        "Faust (Goethe)"
+      ],
+      "sample_path": "Query (passage: Frankfurt) --[mentions | flow=0.538]--> (entity: Frankfurt) --[mentions | flow=0.213]--> (passage: Johann Wolfgang von Goethe)"
+    },
+    {
+      "id": "2wiki_comp_002",
+      "dataset": "2wikimultihopqa",
+      "question": "What is the headquarter city of the manufacturer of the Model S?",
+      "gold_answer": "Austin",
+      "predicted_answer": "Austin",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@2": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.526457999512786,
+      "generation_latency_ms": 0.04829099998460151,
+      "total_latency_ms": 0.5747489994973876,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 63,
+      "retrieved_titles": [
+        "Tesla Model S",
+        "Tesla, Inc.",
+        "Palo Alto, California",
+        "Elon Musk"
+      ],
+      "sample_path": "Query (entity: The Tesla Model) --[mentions | flow=0.477]--> (passage: Tesla Model S)"
+    }
+  ]
+}

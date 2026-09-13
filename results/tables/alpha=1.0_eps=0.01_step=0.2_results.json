@@ -1,0 +1,96 @@
+{
+  "summary": {
+    "pipeline": "alpha=1.0_eps=0.01_step=0.2",
+    "num_samples": 3,
+    "exact_match": 1.0,
+    "f1": 1.0,
+    "mrr": 0.8333333333333334,
+    "recall@1": 0.27777777777777773,
+    "recall@2": 0.611111111111111,
+    "recall@3": 0.8888888888888888,
+    "recall@5": 1.0,
+    "retrieval_latency_ms": 0.62308333266022,
+    "total_latency_ms": 0.722027666294404,
+    "avg_diffusion_steps": 52.0
+  },
+  "samples": [
+    {
+      "id": "musique_2hop_001",
+      "dataset": "musique",
+      "question": "What is the capital of the country where the inventor of the telephone was born?",
+      "gold_answer": "Edinburgh",
+      "predicted_answer": "Edinburgh",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@2": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.5404169969551731,
+      "generation_latency_ms": 0.0396249997720588,
+      "total_latency_ms": 0.5800419967272319,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 42,
+      "retrieved_titles": [
+        "Scotland",
+        "Alexander Graham Bell",
+        "United Kingdom",
+        "Thomas Edison"
+      ],
+      "sample_path": "Query (passage: United Kingdom) --[mentions | flow=0.122]--> (entity: United Kingdom) --[mentions | flow=0.056]--> (passage: Scotland)"
+    },
+    {
+      "id": "musique_3hop_002",
+      "dataset": "musique",
+      "question": "Who directed the movie produced by the founder of Lucasfilm?",
+      "gold_answer": "Irvin Kershner",
+      "predicted_answer": "Irvin Kershner",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 1.0,
+      "recall@1": 0.3333333333333333,
+      "recall@2": 0.3333333333333333,
+      "recall@3": 0.6666666666666666,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.680582998029422,
+      "generation_latency_ms": 0.20458300059544854,
+      "total_latency_ms": 0.8851659986248706,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 68,
+      "retrieved_titles": [
+        "Lucasfilm",
+        "Steven Spielberg",
+        "The Empire Strikes Back",
+        "George Lucas"
+      ],
+      "sample_path": "Query (entity: Lucasfilm) --[mentions | flow=0.238]--> (passage: Lucasfilm)"
+    },
+    {
+      "id": "musique_2hop_003",
+      "dataset": "musique",
+      "question": "In what year was the university attended by the author of '1984' founded?",
+      "gold_answer": "1440",
+      "predicted_answer": "1440",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.5,
+      "recall@1": 0.0,
+      "recall@2": 0.5,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.6482500029960647,
+      "generation_latency_ms": 0.05262500053504482,
+      "total_latency_ms": 0.7008750035311095,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 46,
+      "retrieved_titles": [
+        "University of Oxford",
+        "Eton College",
+        "George Orwell",
+        "Aldous Huxley"
+      ],
+      "sample_path": "Query (entity: The University) --[mentions | flow=0.197]--> (passage: University of Oxford)"
+    }
+  ]
+}

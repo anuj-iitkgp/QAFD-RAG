@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "pipeline": "VectorRAG_2WIKIMULTIHOPQA",
+    "num_samples": 2,
+    "exact_match": 1.0,
+    "f1": 1.0,
+    "mrr": 0.3333333333333333,
+    "recall@1": 0.0,
+    "recall@2": 0.0,
+    "recall@3": 0.5,
+    "recall@5": 1.0,
+    "retrieval_latency_ms": 2.0524790015770122,
+    "total_latency_ms": 3.8124160000734264,
+    "avg_diffusion_steps": 0.0
+  },
+  "samples": [
+    {
+      "id": "2wiki_comp_001",
+      "dataset": "2wikimultihopqa",
+      "question": "Which city is the birthplace of the author of 'Faust'?",
+      "gold_answer": "Frankfurt",
+      "predicted_answer": "Frankfurt",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@2": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 3.917500001989538,
+      "generation_latency_ms": 1.1060830001952127,
+      "total_latency_ms": 5.0235830021847505,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 0,
+      "retrieved_titles": [
+        "Frankfurt",
+        "Weimar",
+        "Faust (Goethe)",
+        "Johann Wolfgang von Goethe"
+      ],
+      "sample_path": "Query -> [Vector Similarity=0.320] -> (Frankfurt)"
+    },
+    {
+      "id": "2wiki_comp_002",
+      "dataset": "2wikimultihopqa",
+      "question": "What is the headquarter city of the manufacturer of the Model S?",
+      "gold_answer": "Austin",
+      "predicted_answer": "Austin",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@2": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.18745800116448663,
+      "generation_latency_ms": 2.4137909967976157,
+      "total_latency_ms": 2.6012489979621023,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 0,
+      "retrieved_titles": [
+        "Elon Musk",
+        "Palo Alto, California",
+        "Tesla Model S",
+        "Tesla, Inc."
+      ],
+      "sample_path": "Query -> [Vector Similarity=0.250] -> (Elon Musk)"
+    }
+  ]
+}

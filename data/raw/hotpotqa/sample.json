@@ -1,0 +1,143 @@
+[
+  {
+    "_id": "hotpot_bridge_001",
+    "question": "Were the directors of Inception and Interstellar the same person?",
+    "answer": "yes",
+    "type": "comparison",
+    "level": "medium",
+    "supporting_facts": [
+      [
+        "Inception",
+        0
+      ],
+      [
+        "Interstellar (film)",
+        0
+      ]
+    ],
+    "context": [
+      [
+        "Inception",
+        [
+          "Inception is a 2010 science fiction action film written and directed by Christopher Nolan, who also produced the film with Emma Thomas.",
+          "The film stars Leonardo DiCaprio as a professional thief who steals information by infiltrating the subconscious of his targets."
+        ]
+      ],
+      [
+        "Interstellar (film)",
+        [
+          "Interstellar is a 2014 epic science fiction film directed, co-written and produced by Christopher Nolan.",
+          "It stars Matthew McConaughey, Anne Hathaway, Jessica Chastain, and Michael Caine."
+        ]
+      ],
+      [
+        "Tenet (film)",
+        [
+          "Tenet is a 2020 science fiction action thriller film directed and written by Christopher Nolan.",
+          "It stars John David Washington and Robert Pattinson."
+        ]
+      ],
+      [
+        "Avatar (2009 film)",
+        [
+          "Avatar is a 2009 American epic science fiction film directed, written, produced, and co-edited by James Cameron.",
+          "The film is set in the mid-22nd century on Pandora."
+        ]
+      ]
+    ]
+  },
+  {
+    "_id": "hotpot_bridge_002",
+    "question": "What award did the spouse of Marie Curie win in 1903?",
+    "answer": "Nobel Prize in Physics",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": [
+      [
+        "Marie Curie",
+        0
+      ],
+      [
+        "Pierre Curie",
+        1
+      ]
+    ],
+    "context": [
+      [
+        "Marie Curie",
+        [
+          "Marie Salomea Sklodowska Curie was a Polish and naturalized-French physicist and chemist who married Pierre Curie in 1895.",
+          "She was the first woman to win a Nobel Prize."
+        ]
+      ],
+      [
+        "Pierre Curie",
+        [
+          "Pierre Curie was a French physicist, a pioneer in crystallography, magnetism, piezoelectricity, and radioactivity.",
+          "In 1903, he received the Nobel Prize in Physics with his wife, Marie Curie, and Henri Becquerel."
+        ]
+      ],
+      [
+        "Henri Becquerel",
+        [
+          "Antoine Henri Becquerel was a French engineer, physicist, Nobel laureate, and the first person to discover evidence of radioactivity.",
+          "He shared the 1903 Nobel Prize in Physics."
+        ]
+      ],
+      [
+        "Wilhelm Rontgen",
+        [
+          "Wilhelm Conrad Rontgen was a German mechanical engineer and physicist who produced and detected electromagnetic radiation in a wavelength range known as X-rays.",
+          "He earned the inaugural Nobel Prize in Physics in 1901."
+        ]
+      ]
+    ]
+  },
+  {
+    "_id": "hotpot_bridge_003",
+    "question": "Which band had a lead singer who performed at Live Aid with Queen?",
+    "answer": "Queen",
+    "type": "bridge",
+    "level": "medium",
+    "supporting_facts": [
+      [
+        "Live Aid",
+        1
+      ],
+      [
+        "Freddie Mercury",
+        0
+      ]
+    ],
+    "context": [
+      [
+        "Freddie Mercury",
+        [
+          "Freddie Mercury was a British singer and songwriter who achieved worldwide fame as the lead vocalist of the rock band Queen.",
+          "Regarded as one of the greatest singers in the history of rock music, he was known for his flamboyant stage persona."
+        ]
+      ],
+      [
+        "Live Aid",
+        [
+          "Live Aid was a multi-venue benefit concert held on Saturday 13 July 1985.",
+          "One of the most notable performances was by Queen, fronted by Freddie Mercury, which is often regarded as one of the greatest rock performances."
+        ]
+      ],
+      [
+        "U2",
+        [
+          "U2 are an Irish rock band from Dublin, formed in 1976. The group consists of Bono, the Edge, Adam Clayton, and Larry Mullen Jr.",
+          "They also performed at Live Aid in 1985."
+        ]
+      ],
+      [
+        "David Bowie",
+        [
+          "David Robert Jones, known professionally as David Bowie, was an English singer, songwriter, and actor.",
+          "He collaborated with Queen on the song 'Under Pressure'."
+        ]
+      ]
+    ]
+  }
+]

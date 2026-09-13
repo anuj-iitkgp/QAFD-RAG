@@ -1,0 +1,70 @@
+{
+  "summary": {
+    "pipeline": "LightRAG_2WIKIMULTIHOPQA",
+    "num_samples": 2,
+    "exact_match": 1.0,
+    "f1": 1.0,
+    "mrr": 0.6666666666666666,
+    "recall@1": 0.25,
+    "recall@2": 0.25,
+    "recall@3": 0.5,
+    "recall@5": 1.0,
+    "retrieval_latency_ms": 0.12864599921158515,
+    "total_latency_ms": 0.2057919991784729,
+    "avg_diffusion_steps": 1.0
+  },
+  "samples": [
+    {
+      "id": "2wiki_comp_001",
+      "dataset": "2wikimultihopqa",
+      "question": "Which city is the birthplace of the author of 'Faust'?",
+      "gold_answer": "Frankfurt",
+      "predicted_answer": "Frankfurt",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 0.3333333333333333,
+      "recall@1": 0.0,
+      "recall@2": 0.0,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.13412499902187847,
+      "generation_latency_ms": 0.03679200017359108,
+      "total_latency_ms": 0.17091699919546954,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "Frankfurt",
+        "Weimar",
+        "Faust (Goethe)",
+        "Johann Wolfgang von Goethe"
+      ],
+      "sample_path": "Query -> [DualLevel: High=0.32, Low=0.00] -> (Frankfurt)"
+    },
+    {
+      "id": "2wiki_comp_002",
+      "dataset": "2wikimultihopqa",
+      "question": "What is the headquarter city of the manufacturer of the Model S?",
+      "gold_answer": "Austin",
+      "predicted_answer": "Austin",
+      "exact_match": 1.0,
+      "f1": 1.0,
+      "mrr": 1.0,
+      "recall@1": 0.5,
+      "recall@2": 0.5,
+      "recall@3": 0.5,
+      "recall@5": 1.0,
+      "retrieval_latency_ms": 0.12316699940129183,
+      "generation_latency_ms": 0.11749999976018444,
+      "total_latency_ms": 0.24066699916147627,
+      "num_retrieved_passages": 4,
+      "diffusion_steps": 1,
+      "retrieved_titles": [
+        "Tesla Model S",
+        "Elon Musk",
+        "Palo Alto, California",
+        "Tesla, Inc."
+      ],
+      "sample_path": "Query -> [DualLevel: High=0.12, Low=1.00] -> (Tesla Model S)"
+    }
+  ]
+}
