@@ -328,7 +328,11 @@ Generate all publication figures saved to `results/figures/`:
 ```bash
 python scripts/plot_results.py
 ```
-
+### Command to Restart Server (if needed)
+```bash
+source .venv/bin/activate
+python scripts/run_server.py --port 8000
+```
 ---
 
 ## Evaluation Metrics & Results
